@@ -9,14 +9,14 @@ const Container = ({ main }) => {
   const { dataCss } = useContext(MyContext);
 
   return (
-    <div style={{backgroundColor: dataCss.primaryColor}} className='container'>
+    <div style={{backgroundColor: dataCss.background}} className='container'>
       <div className='container-header'>
         <Header />
       </div>    
       <main className='container-main'>
         {main}
       </main>
-      <div style={{backgroundColor: dataCss.primaryColor}} className='container-footer'>
+      <div style={{backgroundColor: dataCss.background}} className='container-footer'>
         <Footer />
       </div>
     </div>

@@ -27,27 +27,27 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   const [dataCss, setDataCss] = useState({
-    background: '#262626',
-    color: '101010'
+    background: '#bfbfbf',
+    color: '#101010'
   });
 
   const handleCheckboxChange = (event) => {
     setDarkMode(event.target.checked);
     if(darkMode === false) {
       setDataCss({
-        background:'505050',
+        background:'#262626',
         color:'ccc'
       })
     } else {
       setDataCss({
-        background:'262626',
+        background:'#bfbfbf',
         color:'101010'
       })
     }
-    console.log(dataCss)
+    console.log(dataCss.background)
   };
   
-  const [dataState, setDataState] = useState({ // gerenciar estados pelo context.api
+  const [dataState, setDataState] = useState({
     title: 'title',
   });
 
@@ -63,7 +63,7 @@ function App() {
     dataIcon,
     dataState,
     darkMode,
-    
+    handleCheckboxChange,
     addDataState
   };
 
