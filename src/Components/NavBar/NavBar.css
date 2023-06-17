@@ -5,7 +5,6 @@
 
 .nav-item {
   cursor: pointer;
-  color: #fff;
   transition: color 0.5s;
   width: 50%; /* ocupará metade da largura do elemento pai */
   height: 50%;

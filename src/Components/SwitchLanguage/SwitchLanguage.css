@@ -66,7 +66,7 @@
 .checkbox-wrapper-8 .tgl-skewed + .tgl-btn {
   overflow: hidden;
   width: 8vh;
-  border-radius: 7px;
+  border-radius: 50px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: all 0.2s ease;

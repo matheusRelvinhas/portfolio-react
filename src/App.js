@@ -36,12 +36,12 @@ function App() {
     if(darkMode === false) {
       setDataCss({
         background:'#262626',
-        color:'ccc'
+        color:'#f5f5f5'
       })
     } else {
       setDataCss({
         background:'#bfbfbf',
-        color:'101010'
+        color:'#101010'
       })
     }
     console.log(dataCss.background)

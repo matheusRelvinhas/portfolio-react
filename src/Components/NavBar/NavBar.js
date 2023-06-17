@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import MyContext from '../../Context/MyContext';
 import './NavBar.css'; // Importe o arquivo de estilos CSS
 
 function NavBar() {
+
+  const { dataCss } = useContext(MyContext);
+
   const [activeOption, setActiveOption] = useState('about'); // Estado para controlar a opção ativa
 
   const handleClick = (option) => {
@@ -10,7 +14,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" style={{color: dataCss.color}}>
       <div
         className={`nav-item ${activeOption === 'about' ? 'active' : ''}`}
         onClick={() => handleClick('about')}

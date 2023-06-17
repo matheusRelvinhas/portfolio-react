@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import MyContext from '../../Context/MyContext';
 import Container from '../../Components/Container/Container';
-import { Carousel, Radio } from 'antd';
-
-const contentStyle = {
-  minHeight: '80vh',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
-};
+import { Carousel } from 'antd';
 
 const HomePage = () => {
+  
+  const { dataCss } = useContext(MyContext);
+
+  const contentStyle = {
+    minHeight: '80vh',
+    color: '#fff',
+    lineHeight: '160px',
+    textAlign: 'center',
+    background: dataCss.color,
+  };
 
   return (
     <>
