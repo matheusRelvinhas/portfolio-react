@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.5s;
+  width: 50%; /* ocupará metade da largura do elemento pai */
+  height: 50%;
+  max-height: 5vh;
+  padding: 0 5vw;
+  font-size: 50%;
+}
+
+.nav-item:hover {
+  color: #aaa;
+}
+
+.active {
+  font-weight: bold;
+}
