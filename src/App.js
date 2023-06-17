@@ -24,11 +24,27 @@ function App() {
     }
   ]
 
-  const dataCss =  { // cor principal de fundo, header(banner) e footer 
-    primaryColor: '#262626',
-    secundaryColor: '#e8372d',
-    logoImage: './img/react-icon.png',
-    bannerImage: 'https://i.postimg.cc/1zLDz6qg/banner-aluraflix.webp'
+  const [darkMode, setDarkMode] = useState(false);
+
+  const [dataCss, setDataCss] = useState({
+    background: '#262626',
+    color: '101010'
+  });
+
+  const handleCheckboxChange = (event) => {
+    setDarkMode(event.target.checked);
+    if(darkMode === false) {
+      setDataCss({
+        background:'505050',
+        color:'ccc'
+      })
+    } else {
+      setDataCss({
+        background:'262626',
+        color:'101010'
+      })
+    }
+    console.log(dataCss)
   };
   
   const [dataState, setDataState] = useState({ // gerenciar estados pelo context.api
@@ -46,6 +62,8 @@ function App() {
     dataCss,
     dataIcon,
     dataState,
+    darkMode,
+    
     addDataState
   };
 
