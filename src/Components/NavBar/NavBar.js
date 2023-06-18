@@ -1,37 +1,30 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import MyContext from '../../Context/MyContext';
 import './NavBar.css'; // Importe o arquivo de estilos CSS
 
 function NavBar() {
 
-  const { dataCss } = useContext(MyContext);
-
-  const [activeOption, setActiveOption] = useState('about'); // Estado para controlar a opção ativa
-
-  const handleClick = (option) => {
-    setActiveOption(option);
-    // Adicione o código da função que você deseja executar aqui
-  };
+  const { dataCss, goToSlide, dataLanguage } = useContext(MyContext);
 
   return (
     <nav className="navbar" style={{color: dataCss.color}}>
       <div
-        className={`nav-item ${activeOption === 'about' ? 'active' : ''}`}
-        onClick={() => handleClick('about')}
+        className='nav-item'
+        onClick={() => goToSlide(3)}
       >
-        About
+        {dataLanguage.about}
       </div>
       <div
-        className={`nav-item ${activeOption === 'projects' ? 'active' : ''}`}
-        onClick={() => handleClick('projects')}
+        className='nav-item'
+        onClick={() => goToSlide(1)}
       >
-        Projects
+        {dataLanguage.projects}
       </div>
       <div
-        className={`nav-item ${activeOption === 'certificates' ? 'active' : ''}`}
-        onClick={() => handleClick('certificates')}
+        className='nav-item'
+        onClick={() => goToSlide(2)}
       >
-        Certificates
+        {dataLanguage.certificates}
       </div>
     </nav>
   );

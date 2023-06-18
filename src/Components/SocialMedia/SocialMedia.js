@@ -5,11 +5,11 @@ import './SocialMedia.css';
 
 const SocialMedia = () => {
 
-  const { dataIcon } = useContext(MyContext);
+  const { dataCss } = useContext(MyContext);
 
   return (
     <div className='social-media'>
-      {dataIcon.map(icon => <div key={uuidv4()}>
+      {dataCss.dataIcon.map(icon => <div key={uuidv4()}>
         <a href={icon.url}>
           <img className='social-media-img' src={icon.icon} alt={icon.alt} width='32' height='32'/>
         </a>

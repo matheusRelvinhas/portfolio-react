@@ -5,33 +5,30 @@ import { Carousel } from 'antd';
 
 const HomePage = () => {
   
-  const { dataCss } = useContext(MyContext);
+  const { dataCss, carouselRef, dataLanguage} = useContext(MyContext);
 
   const contentStyle = {
     minHeight: '80vh',
     color: '#fff',
-    lineHeight: '160px',
+    lineHeight: '100px',
     textAlign: 'center',
-    background: dataCss.color,
+    background: dataCss.carousel,
   };
-
+  
   return (
     <>
       <Container
         main={
           <>
-            <Carousel dotPosition={'top'}>
+            <Carousel ref={carouselRef} dotPosition={'top'}>
               <div>
-                <h3 style={contentStyle}>1</h3>
+                <h3 style={contentStyle}>{dataLanguage.about}</h3>
               </div>
               <div>
-                <h3 style={contentStyle}>2</h3>
+                <h3 style={contentStyle}>{dataLanguage.projects}</h3>
               </div>
               <div>
-                <h3 style={contentStyle}>3</h3>
-              </div>
-              <div>
-                <h3 style={contentStyle}>4</h3>
+                <h3 style={contentStyle}>{dataLanguage.certificates}</h3>
               </div>
             </Carousel>
           </>
