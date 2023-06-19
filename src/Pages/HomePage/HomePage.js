@@ -2,36 +2,31 @@ import React, { useContext } from 'react';
 import MyContext from '../../Context/MyContext';
 import Container from '../../Components/Container/Container';
 import { Carousel } from 'antd';
+import About from '../../Components/About/About';
+import Projects from '../../Components/Projects/Projects';
+import Certificates from '../../Components/Certificates/Certificates';
 
 const HomePage = () => {
   
-  const { dataCss, carouselRef, dataLanguage} = useContext(MyContext);
+  const { carouselRef, dataCss} = useContext(MyContext);
 
-  const contentStyle = {
-    minHeight: '80vh',
-    color: '#fff',
-    lineHeight: '100px',
-    textAlign: 'center',
-    background: dataCss.carousel,
-  };
-  
   return (
     <>
       <Container
         main={
-          <>
+          <div style={{backgroundColor: dataCss.carousel}}>
             <Carousel ref={carouselRef} dotPosition={'top'}>
               <div>
-                <h3 style={contentStyle}>{dataLanguage.about}</h3>
+                <About/>
               </div>
               <div>
-                <h3 style={contentStyle}>{dataLanguage.projects}</h3>
+                <Projects/>
               </div>
               <div>
-                <h3 style={contentStyle}>{dataLanguage.certificates}</h3>
+                <Certificates/>
               </div>
             </Carousel>
-          </>
+          </div>
         }
       /> 
     </>

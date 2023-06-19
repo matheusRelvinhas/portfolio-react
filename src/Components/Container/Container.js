@@ -9,8 +9,8 @@ const Container = ({ main }) => {
   const { dataCss } = useContext(MyContext);
 
   return (
-    <div style={{backgroundColor: dataCss.background}} className='container'>
-      <div className='container-header'>
+    <div className='container'>
+      <div style={{background: dataCss.background}} className='container-header'>
         <Header />
       </div>    
       <main className='container-main'>

@@ -1,0 +1,20 @@
+.projects-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 88vh;
+  line-height: 100px;
+  max-height: 88vh;
+  overflow: auto;
+}
+
+.projects-cards-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin-bottom: 12px;
+}

@@ -12,7 +12,7 @@ function NavBar() {
         className='nav-item'
         onClick={() => goToSlide(3)}
       >
-        {dataLanguage.about}
+        {dataLanguage.about.title}
       </div>
       <div
         className='nav-item'

@@ -3,6 +3,11 @@ import MyContext from './Context/MyContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './Pages/HomePage/HomePage';
 
+function BodyComponent({ backgroundColor }) {
+  document.body.style.backgroundColor = backgroundColor;
+  return null; // Como este componente não possui conteúdo a ser renderizado, retornamos null
+}
+
 function App() {
 
   const carouselRef = useRef(null);
@@ -12,12 +17,36 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   
   const initialStateDataLanguage = {
-    about: 'Sobre',
+    about: {
+      title:'Sobre',
+      text:'Programador Front-End | CSS | HTML | React.js'
+    },
     projects: 'Projetos',
     certificates: 'Certificados'
   };
   
   const [dataLanguage, setDataLanguage] = useState(initialStateDataLanguage);
+  
+  const dataPages = {
+    about: {
+      image : './img/image-about-portifolio.png',
+      alt : 'image-portifolio'
+    },
+    projects: [
+      {
+        title: 'Aluraflix',
+        image: './img/tela-app-aluraflix.png',
+        alt: 'image-aluraflix',
+        url: ''
+      },
+      {
+        title: 'Relvis Delivery',
+        image: './img/tela-app-relvis-delivery.png',
+        alt: 'image-relvis-delivery',
+        url: ''
+      }
+    ]
+  }
 
   const initialStateDataCss = {
     background: '#f0f0f0',
@@ -54,7 +83,10 @@ function App() {
     setEnglishMode(event.target.checked);
     if (englishMode === false) {
       setDataLanguage({
-        about: 'About',
+        about: {
+          title:'About',
+          text:'DEV Front-End | CSS | HTML | React.js'
+        },
         projects: 'Projects',
         certificates: 'Certificates'
       })
@@ -100,6 +132,7 @@ function App() {
   const sharedData = {
     carouselRef,
     dataLanguage,
+    dataPages,
     dataCss,
     englishMode,
     darkMode,
@@ -111,6 +144,7 @@ function App() {
   return (
     <Router>
       <MyContext.Provider value={sharedData}>
+        <BodyComponent backgroundColor={dataCss.carousel} />
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>
@@ -118,5 +152,7 @@ function App() {
     </Router>
   );
 }
+
+document.body.style.backgroundColor = '#505050';
 
 export default App;
