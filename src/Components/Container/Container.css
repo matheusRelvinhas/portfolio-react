@@ -13,3 +13,9 @@
     overflow-y:auto;
   }
 }
+
+@media (max-height: 600px) {
+  .container {
+    overflow-y:auto;
+  }
+}
