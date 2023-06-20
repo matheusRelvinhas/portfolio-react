@@ -184,7 +184,7 @@ function App() {
       <MyContext.Provider value={sharedData}>
         <BodyComponent backgroundColor={dataCss.carousel} />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/portfolio-react" element={<HomePage />} />
         </Routes>
       </MyContext.Provider>
     </Router>
