@@ -15,7 +15,7 @@ const HomePage = () => {
       <Container
         main={
           <div style={{backgroundColor: dataCss.carousel}}>
-            <Carousel ref={carouselRef} dotPosition={'top'}>
+            <Carousel ref={carouselRef} effect='scrollx' dotPosition={'top'}>
               <div>
                 <About/>
               </div>
