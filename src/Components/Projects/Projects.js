@@ -14,6 +14,7 @@ const Projects = () => {
       }}
     >
       <h1
+        className='projects-h1'
         style={{
           color: dataCss.color,
         }}
@@ -31,7 +32,7 @@ const Projects = () => {
                 borderColor: dataCss.background,
                 backgroundColor: dataCss.background,
               }}
-              cover={<img alt={card.alt} src={card.image} />}
+              cover={<img className='projects-img' alt={card.alt} src={card.image} />}
             >
               <h2
                 style={{

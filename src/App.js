@@ -29,21 +29,59 @@ function App() {
   
   const dataPages = {
     about: {
-      image : './img/image-about-portifolio.png',
+      image : 'https://i.postimg.cc/9XgLMTdF/image-about-portifolio.png',
       alt : 'image-portifolio'
     },
     projects: [
       {
         title: 'Aluraflix',
-        image: './img/tela-app-aluraflix.png',
+        image: 'https://i.postimg.cc/k5CcZymw/tela-app-aluraflix.png',
         alt: 'image-aluraflix',
-        url: ''
+        url: 'https://matheusrelvinhas.github.io/aluraflix/'
       },
       {
         title: 'Relvis Delivery',
-        image: './img/tela-app-relvis-delivery.png',
+        image: 'https://i.postimg.cc/G27x4wsS/tela-app-relvis-delivery.png',
         alt: 'image-relvis-delivery',
-        url: ''
+        url: 'https://matheusrelvinhas.github.io/relvis-delivery'
+      }
+    ],
+    certificates: [
+      {
+        title: 'Alura - React.js',
+        image: 'https://i.postimg.cc/J0Fx2VrB/certificado-frontend-alura-en.png',
+        alt: 'image-alura-react',
+        url: 'https://i.postimg.cc/J0Fx2VrB/certificado-frontend-alura-en.png'
+      },
+      {
+        title: 'Alura - Soft Skills',
+        image: 'https://i.postimg.cc/fLBBYS1C/desenvolvimento-pessoal-alura.png',
+        alt: 'image-alura-soft-skills',
+        url: 'https://i.postimg.cc/fLBBYS1C/desenvolvimento-pessoal-alura.png'
+      },
+      {
+        title: 'Alura - JS',
+        image: 'https://i.postimg.cc/KjjQfv22/iniciante-programacao-alura.png',
+        alt: 'image-alura-javascript',
+        url: 'https://i.postimg.cc/KjjQfv22/iniciante-programacao-alura.png'
+      },
+      {
+        title: 'Curso em Vídeo - JS',
+        image: 'https://i.postimg.cc/CLZmf17C/Matheus-Carvalho-Relvinhas-Javascript-40-Horas-Certificado-Curso-em-Video.png',
+        alt: 'image-curso-video-javascript',
+        url: 'https://i.postimg.cc/CLZmf17C/Matheus-Carvalho-Relvinhas-Javascript-40-Horas-Certificado-Curso-em-Video.png'
+      },
+      {
+        title: 'Trybe - JS',
+        image: 'https://i.postimg.cc/SxCdDvwJ/modulo-1-trybe.png',
+        alt: 'image-trybe-modulo-1',
+        url: 'https://i.postimg.cc/SxCdDvwJ/modulo-1-trybe.png'
+      },
+      {
+        title: 'Trybe - React.js',
+        image: 'https://i.postimg.cc/65DzVXbk/modulo-2-trybe.png',
+        alt: 'image-trybe-modulo-2',
+        url: 'https://i.postimg.cc/65DzVXbk/modulo-2-trybe.png'
       }
     ]
   }
@@ -56,17 +94,17 @@ function App() {
     boxShadowFooter: 'inset 0 10px 10px -10px rgba(0, 0, 0, 0.3)',
     dataIcon:[
         {
-          icon: './img/github-icon-dark.png',
+          icon: 'https://i.postimg.cc/XYCHtJyN/github-icon-dark.png',
           url: 'https://github.com/matheusRelvinhas/',
           alt: 'github',
         },
         {
-          icon: './img/linkedin-icon-dark.png',
+          icon: 'https://i.postimg.cc/bv06NBTK/linkedin-icon-dark.png',
           url: 'https://www.linkedin.com/in/relvinhasmatheus/',
           alt: 'linkedin',
         },
         {
-          icon: './img/whatsapp-icon-dark.png',
+          icon: 'https://i.postimg.cc/pdBZtnVv/whatsapp-icon-dark.png',
           url: 'https://wa.me/5531971451910',
           alt: 'whatsapp',
         },
@@ -107,17 +145,17 @@ function App() {
         boxShadowFooter: 'inset 0 10px 10px -10px rgba(225, 225, 225, 0.15)',
         dataIcon:[
           {
-            icon: './img/github-icon-white.png',
+            icon: 'https://i.postimg.cc/tgGSbjh3/github-icon-white.png',
             url: 'https://github.com/matheusRelvinhas/',
             alt: 'github',
           },
           {
-            icon: './img/linkedin-icon-white.png',
+            icon: 'https://i.postimg.cc/mDbmcyph/linkedin-icon-white.png',
             url: 'https://www.linkedin.com/in/relvinhasmatheus/',
             alt: 'linkedin',
           },
           {
-            icon: './img/whatsapp-icon-white.png',
+            icon: 'https://i.postimg.cc/xCTPjTqz/whatsapp-icon-white.png',
             url: 'https://wa.me/5531971451910',
             alt: 'whatsapp',
           },
@@ -152,7 +190,5 @@ function App() {
     </Router>
   );
 }
-
-document.body.style.backgroundColor = '#505050';
 
 export default App;

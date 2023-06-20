@@ -2,10 +2,8 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 88vh;
-  line-height: 100px;
-  max-height: 88vh;
   overflow: auto;
+  height: 80vh;
 }
 
 .projects-cards-div {
@@ -17,4 +15,35 @@
 
 .card {
   margin-bottom: 12px;
+}
+
+.projects-img{
+  height: 350px;
+  width: 100%;
+}
+
+.projects-h1 {
+  line-height: 100px;
+}
+
+.projects-h2 {
+  font-size: x-large;
+}
+
+@media (min-width: 350px) {
+  .projects-div {
+    height: 82vh;
+  }
+}
+
+@media (min-width: 390px) {
+  .projects-div {
+    height: 84.5vh;
+  }
+}
+
+@media (min-width: 750px) {
+  .projects-div {
+    height: 87vh;
+  }
 }

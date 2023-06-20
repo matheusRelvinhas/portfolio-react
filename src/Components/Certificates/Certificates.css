@@ -1,8 +1,49 @@
 .certificates-div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
+  overflow: auto;
   height: 80vh;
+}
+
+.certificates-cards-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin-bottom: 12px;
+}
+
+.certificates-img{
+  height: 225px;
+  width: 100%;
+}
+
+.certificates-h1 {
   line-height: 100px;
+}
+
+.certificates-h2 {
+  font-size: x-large;
+}
+
+@media (min-width: 350px) {
+  .certificates-div {
+    height: 82vh;
+  }
+}
+
+@media (min-width: 390px) {
+  .certificates-div {
+    height: 84.5vh;
+  }
+}
+
+@media (min-width: 750px) {
+  .certificates-div {
+    height: 87vh;
+  }
 }
