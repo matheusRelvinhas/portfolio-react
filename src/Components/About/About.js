@@ -15,7 +15,9 @@ const About = () => {
       <h1 className='about-h1'>{dataLanguage.about.title}</h1>
       <div className='about-text-div'> 
         <p className='about-text'>{dataLanguage.about.text}</p>
-        <p>/matheusRelvinhas</p>
+        <a href='https://github.com/matheusRelvinhas/'>
+          <p>/matheusRelvinhas</p>
+        </a>
       </div>
       <div className='about-div-img'>
         <img className='about-img' src={dataPages.about.image} alt={dataPages.about.alt}/>

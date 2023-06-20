@@ -34,13 +34,14 @@ const Projects = () => {
               }}
               cover={<img className='projects-img' alt={card.alt} src={card.image} />}
             >
-              <h2
+              <h1
+                className='projects-h2'
                 style={{
                   color: dataCss.color,
                 }}
               >
                 {card.title}
-              </h2>
+              </h1>
             </Card>
             </a>
           </div>
