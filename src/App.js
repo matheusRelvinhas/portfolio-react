@@ -44,6 +44,12 @@ function App() {
         image: 'https://i.postimg.cc/G27x4wsS/tela-app-relvis-delivery.png',
         alt: 'image-relvis-delivery',
         url: 'https://matheusrelvinhas.github.io/relvis-delivery'
+      },
+      {
+        title: 'Easy IA',
+        image: 'https://i.postimg.cc/GtTt6TwW/tela-app-easy-ia.png',
+        alt: 'image-easy-ia',
+        url: 'https://matheusrelvinhas.github.io/easy-ia'
       }
     ],
     certificates: [
