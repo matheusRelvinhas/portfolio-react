@@ -34,22 +34,22 @@ function App() {
     },
     projects: [
       {
-        title: 'Aluraflix',
-        image: 'https://i.postimg.cc/k5CcZymw/tela-app-aluraflix.png',
-        alt: 'image-aluraflix',
-        url: 'https://matheusrelvinhas.github.io/aluraflix/'
-      },
-      {
-        title: 'Relvis Delivery',
-        image: 'https://i.postimg.cc/G27x4wsS/tela-app-relvis-delivery.png',
-        alt: 'image-relvis-delivery',
-        url: 'https://matheusrelvinhas.github.io/relvis-delivery'
+        title: 'Relvis Delivery 2.0',
+        image: 'https://i.postimg.cc/k5frQKXm/client-relvis-delivery.png',
+        alt: 'image-relvis-delivery-2.0',
+        url: 'https://relvis-delivery-2-0.vercel.app/'
       },
       {
         title: 'Easy IA',
         image: 'https://i.postimg.cc/GtTt6TwW/tela-app-easy-ia.png',
         alt: 'image-easy-ia',
         url: 'https://matheusrelvinhas.github.io/easy-ia'
+      },
+      {
+        title: 'Aluraflix',
+        image: 'https://i.postimg.cc/k5CcZymw/tela-app-aluraflix.png',
+        alt: 'image-aluraflix',
+        url: 'https://matheusrelvinhas.github.io/aluraflix/'
       }
     ],
     certificates: [
